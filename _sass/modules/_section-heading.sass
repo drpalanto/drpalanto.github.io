@@ -1,0 +1,25 @@
+.section-heading
+	position: relative
+	text-align: center
+	font-weight: $font-weight--normal
+	font-size: $font-size--verybig
+	color: lighten($dark-blue, 10%)
+	margin-bottom: $spacing--normal
+
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		top: 50%
+		height: 6px
+		border-radius: 10px
+		background-color: $grey10
+
+
+.hide-separator
+	background: white
+	padding: 0 .8rem
+	position: relative
+	z-index: 300

@@ -1,0 +1,69 @@
+.masthead
+  color: $white
+  position: relative
+  background: $blue
+  text-align: center
+  min-height: rem(160px)
+  margin-bottom: $spacing--normal * 1.5
+
+  &__title
+    color: $white
+    font-size: $font-size--huge * 1.5
+    font-weight: $font-weight--bold
+    margin: 0
+
+  &__meta
+    color: rgba($white, .7)
+    letter-spacing: 1px
+    font-size: 1rem
+    margin-bottom: 0
+
+.masthead--cover
+  height: rem(400px)
+  height: 42vh
+  background: no-repeat center / cover
+  z-index: 10
+
+  &:before
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba($blue, .8)
+    z-index: 20
+
+.masthead--author
+  min-height: rem(400px)
+
+  .masthead__title
+    font-weight: $font-weight--normal
+
+.u-vertic-centered--masthead
+  width: 100%
+  transform: translate(-50%, -50%)
+  position: absolute
+  padding-top: 50px
+  z-index: 1000
+  top: 50%
+  left: 50%
+
+// FIXME: This block was the cause of a segmentation fault until I fixed the indentation.
+.social-links
+  position: relative
+  z-index: 9900
+  li
+    display: inline-block
+    font-size: $font-size--huge
+    a
+      color: $white
+      margin: 0 .6rem
+      -webkit-backface-visibility: hidden
+      i
+        transition: all 60ms ease-in-out
+        &:hover
+          transform: scale(1.5)
+        &:active
+          transform: scale(1.3)

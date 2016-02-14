@@ -1,0 +1,15 @@
+// Import only if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+	@import url($font-url--google);
+}
+
+// Mixins
+
+@mixin img-replace($img, $w, $h, $display: block) {
+	background-image: url('#{$path--rel}/#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+	display: $display
+}

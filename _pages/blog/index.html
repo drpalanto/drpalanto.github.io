@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Blog"
+permalink: "/blog/"
+cover:
+---
+<div class="l-post-container">
+  <section id="article-list" class="articles articles--full">
+    <h2 class="section-heading"><span class="hide-separator">Tutti gli articoli</span></h2>
+
+      <ul class="articles__list">
+          {% for post in site.posts %}
+              <a class="articles__link " href="{{ post.url | prepend: site.baseurl }}">
+                <li class="articles__entry">
+                  <span class="articles__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                  <h2>
+                    {{ post.title }}
+                  </h2>
+                  <p>Chances are, at some point, you’ll want to include images, downloads, or other digital assets along with your text content. While the syntax for linking to these resources differs between Markdown and Textile, the problem of working out where to store these files in your site is something everyone will face.</p>
+                </li>
+              </a>
+          {% endfor %}
+      </ul>
+  </section>
+</div>

@@ -1,0 +1,55 @@
+$nav-blue: #3D4149
+$bar-height: 50px
+
+.site-nav
+	background-color: rgba($nav-blue,.90)
+	text-align: center
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	height: $bar-height
+	line-height: $bar-height
+	z-index: 5000
+	font-size: $font-size--small
+	.l-container
+		padding: 0
+	&__item
+		display: inline
+		font-weight: $font-weight--bold
+		line-height: $bar-height - 3px
+		margin-right: 0
+		&:last-child
+			margin-right: 0
+		a
+			color: rgba($white, .65)
+			display: inline-block
+			padding: 0 .4rem
+			font-weight: $font-weight--bold
+
+			&:hover
+				text-decoration: none
+				border-bottom: 2px solid $white
+				color: $white
+
+			&.link-is-active
+				color: $font-color--light
+				border-bottom: 2px solid $white
+
+@media (min-width: rem(350px)) and (max-width: $breakpoint--phone - rem(1px))
+	.site-nav__item a
+		padding: 0 .6rem
+
+@media (min-width: $breakpoint--phone) and (max-width: $breakpoint--tablet - rem(1px))
+	.site-nav__item a
+		padding: 0 .9rem
+
+@media (min-width: $breakpoint--tablet)
+	.site-nav__item a
+		padding: 0 1.4rem
+
+@media (min-width: $breakpoint--laptop)
+	.site-nav__item a
+		padding: 0 2rem
+	.site-nav
+		position: absolute

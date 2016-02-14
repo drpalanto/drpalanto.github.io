@@ -1,0 +1,195 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css") screen
+
+/* Important defaults
+/*---------------------------------------------------------------------------*/
+html
+  font-size: 100%
+  min-width: rem(320px)
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+*, *:before, *:after
+  box-sizing: inherit
+
+img
+  box-sizing: content-box
+
+/* Basic Styles
+/*---------------------------------------------------------------------------*/
+
+/* Selections */
+::-moz-selection
+  background: $selection-background
+  color: $selection-color
+  text-shadow: none
+
+::selection
+  background-color: $selection-background
+  background-color: rgba($selection-background, .99)
+  color: $selection-color
+  text-shadow: none
+
+a::moz-selection
+  color: $selection-color--link
+
+a::selection
+  color: $selection-color--link
+
+// Basic Typography
+html,
+body,
+button,
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+
+article :not(h1)
+  -moz-osx-font-smoothing: auto
+  -webkit-font-smoothing: subpixel-antialiased
+  font-smoothing: subpixel-antialiased
+
+body
+  color: $font-color--normal
+  font-family: $font-family--normal
+  line-height: $line-height--normal
+  background-color: $background-color--body
+  font-weight: $font-weight--normal
+  font-size: rem(14px)
+  margin: 0
+  padding: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $font-family--heading
+  font-size: $font-size--normal
+  margin: 0 0 $spacing--tiny
+  color: $font-color--dark
+
+h1
+  font-size: $font-size--big
+  margin-bottom: $spacing--normal
+
+p
+  margin: 0 0 $spacing--normal
+
+b, strong
+  color: $font-color--dark
+  font-weight: $font-weight--bold
+
+mark
+  background: desaturate($yellow, 15%)
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-bottom: $border--normal
+  margin: $spacing--normal 0
+  padding: 0
+
+small
+  font-size: $font-size--tiny
+
+// Links
+a
+  color: $font-color--link
+  text-decoration: none
+  transition: all 0.09s linear
+  font-weight: $font-weight--semibold
+  -webkit-tap-highlight-color: rgba($font-color--link, .5)
+
+  &:hover
+    text-decoration: underline
+
+  &:active
+    color: $font-color--linkon
+
+// Images
+img,
+picture
+  margin: 0
+  max-width: 100%
+  //width: 100%
+  height: auto !important
+
+figure
+  margin: 0
+  padding: 0 0 $spacing--normal
+figcaption
+  font-size: $font-size--tiny
+  font-family: $font-family--serif
+  text-align: center
+  line-height: $font-size--tiny
+
+// Lists
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+.post-content ul
+  list-style: circle
+  padding-left: $spacing--normal
+
+// Basic Table Styles
+table
+  border-collapse: collapse
+  margin: $spacing--small 0
+  table-layout: fixed
+  width: 100%
+
+th
+  border-bottom: 1px solid $border--normal
+  color: $font-color--dark
+  font-weight: 500
+  padding: $spacing--small 0
+  text-align: left
+
+td
+  padding: $spacing--small 0
+
+tr
+  border-bottom: $border--normal
+
+  &:last-child
+    border: none
+
+tr,
+td,
+th
+  vertical-align: middle
+  padding-left: 1rem
+
+// Forms
+input, textarea
+  border-radius: $border-radius--normal
+  margin-bottom: $spacing--small
+  padding: .6rem
+  border: none
+  width: 100%
+  background-color: tint($dark-blue, 70%)
+  color: $dark-blue
+  +placeholder
+    color: tint($dark-blue, 30%)
+
+input
+  width: 76%
+
+input:focus,
+textarea:focus
+  background-color: $white
+
+// Inverted colors
+.invert-colors
+  h1, h2, h3, h4, h5, h6, p, a
+    color: $grey10
+
+  b, strong
+    color: $font-color--light
+  th
+    color: $font-color--light

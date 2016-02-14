@@ -1,0 +1,38 @@
+<header id="site-header" class="site-header">
+
+<!-- Navigation -->
+  <nav id="site-nav" class="site-nav" role="navigation">
+    <div class="l-container">
+      <ul class="u-list--no-style">
+        <li class="site-nav__item"><a class="{% if page.url == "/" %}link-is-active{% endif %}" href="/">Home</a></li>
+        {% for link in site.site-nav %}
+          <li class="site-nav__item"><a href="{{ link.url }}" class="{% if page.url contains link.url %}link-is-active{% endif %}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+
+<!-- Masthead -->
+    <div class="masthead {% if page.cover %}masthead--cover{% endif %} {% if page.url == "/" %}masthead--author{% endif %}" style="background-image:url('{% if page.cover contains "http" or page.cover contains "https" %} {{page.cover}} {% else %}{{ page.cover | prepend: "/immagini/"}} {% endif %}');">
+    <div class="l-container">
+      <div class="u-vertic-centered--masthead">
+      {% if page.url != "/" %}
+        <h1 class="masthead__title" itemprop="name headline">{{page.title}}</h1>
+        {% if page.is_post == true %}<p class="masthead__meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>{% endif %}
+      {% else %}
+        <div class="author__picture">
+          <img src="https://pbs.twimg.com/profile_images/1613900141/Fototessera-tonio-150x150.jpg" alt="Foto Antonio Palazzo">
+        </div>
+        <h1 class="masthead__title">{{site.author}}</h1>
+        <p class="masthead__meta">{{site.author_info}}</p>
+
+        <ul class="social-links">
+          <li><a href="https://twitter.com/drpalanto" title="@drpalanto" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/osteopatiamottola" title="Studio Professionale di Osteopatia e Fisioterapia - Mottola" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+
+</header>

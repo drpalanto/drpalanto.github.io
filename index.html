@@ -1,0 +1,56 @@
+---
+layout: default
+cover: home.jpg
+---
+
+    <section id="servizi">
+      <h2 class="section-heading"><span class="hide-separator">Servizi</span></h2>
+      <div class="l-grid">
+        <div class="l-grid__col l-grid__col--1-of-3">
+          <h3>Fisioterapia</h3>
+          <p>Include tecniche mirate allo sviluppo, al mantenimento ed al recupero del movimento. E’ fondamentale in caso di problematiche e disabilità secondarie a patologie di origine traumatica a carico della componente scheletrica, oppure secondarie ad intervento chirurgico.</p>
+          <a href="/servizi/fisioterapia" class="u-align--right">Ulteriori informazioni</a>
+        </div>
+
+        <div class="l-grid__col l-grid__col--1-of-3">
+          <h3>Osteopatia</h3>
+          <p>L'osteopatia è una medicina olistica non convenzionale che utilizzando le sole mani, come strumento di diagnosi e cura, stimola le proprietà auto-guaritrici del corpo. Si avvale di un approccio causale e non sintomatico (spesso infatti la causa del dolore trova la sua locazione lontano dalla zona dolorosa).</p>
+          <a href="/servizi/osteopatia" class="u-align--right">Ulteriori informazioni</a>
+        </div>
+
+        <div class="l-grid__col l-grid__col--1-of-3">
+          <h3>Disturbi Cranio-Cervico-Mandibolari</h3>
+          <p>La terapia dei disturbi cranio-cervico-mandibolari dopo una accurata e approfondita analisi permette di curare i disturbi provocati da problemi muscolari, nervosi e articolari dell'articolazione temporomandibolari, che molto spesso provocano sintomi quali: cefalea, dolori alla schiena, all'orecchio, acufeni, vertigini.</p>
+          <a href="/servizi/disturbi-cranio-cervico-mandibolari" class="u-align--right">Ulteriori informazioni</a>
+        </div>
+      </div>
+      <div class="why">
+        <h3>Perché scegliermi?</h3>
+        <p>Perché il Dott. Antonio Palazzo è un professionista sanitario laureato in Fisioterapia e Osteopatia.</p>
+      </div>
+    </section>
+
+
+    <section id="recent-posts" class="recent-posts">
+    <h2 class="section-heading"><span class="hide-separator">Articoli Recenti</span></h2>
+
+      <ul class="recent-posts__list l-grid">
+          {% for post in site.posts %}
+
+              <div class="l-grid__col l-grid__col--1-of-2">
+              <a class="recent-posts__link " href="{{ post.url | prepend: site.baseurl }}">
+                <li class="recent-posts__entry">
+                  <span class="recent-posts__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                  <h2>
+                    {{ post.title }}
+                  </h2>
+                </li>
+              </a>
+              </div>
+          {% endfor %}
+      </ul>
+      <div><a class="btn" href="{{site.url}}/blog">Vai al blog</a></div>
+    </section>
+
+</div>

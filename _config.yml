@@ -1,0 +1,101 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Dott. Antonio Palazzo - Fisioterapista e Osteopata
+author: Dott. Antonio Palazzo
+author_info: Fisioterapista || Osteopata
+email: info@antoniopalazzo.net
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.antoniopalazzo.net" # the base hostname & protocol for your site
+twitter_username: drpalanto
+permalink: /blog/:title/
+
+# Build settings
+port: 3000
+include: ["_pages"]
+exclude: [node_modules, package.json, npm-debug.log, gulpfile.js, README.md]
+
+# Site navigation
+site-nav:
+  - title: "Servizi"
+    url: /servizi
+  - title: "Chi Sono"
+    url: /chi-sono
+  - title: "Blog"
+    url: /blog
+  - title: "Contatti"
+    url: /contatti
+
+# Site defaults
+defaults:
+  # Check page type
+  - scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
+
+prose:
+  media: 'immagini'
+  siteurl: 'http://www.antoniopalazzo.net'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_sass
+    - /assets
+    - .gitignore
+    - 404.html
+    - CNAME
+    - favicon.ico
+    - index.html
+    - feed.xml
+    - crossdomain.xml
+    - browserconfig.xml
+    - gulpfile.js
+    - package.json
+    - robots.txt
+    - tile-wide.png
+    - tile.png
+    - apple-touch-icon.png
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Pubblicato"
+          help: "Lascia attivato se vuoi pubblicare subito l'articolo"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "date"
+          value: CURRENT_DATETIME
+      - name: "cover"
+        field:
+          element: "text"
+          label: "cover"
+          value: ""
+      - name: "tags"
+        field:
+          element: "text"
+          label: "tags"
+          value: ""

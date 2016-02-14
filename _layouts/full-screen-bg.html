@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Errore 404 - Pagina non trovata">
+  <meta name="keywords" content="antonio,palazzo,fisioterapista,fisioterapia,osteopata,osteopatia,dott,dottor,mottola,puglia,taranto,martina,franca"/>
+  <meta name="author" content="Antonio Palazzo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Errore 404 - Pagina non trovata</title>
+
+	<style>
+		@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css") screen;
+		@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css") screen;
+		html {
+			font-size: 100%;
+			font-size: 16px;
+			min-width: 320px;
+			box-sizing: border-box;
+		}
+		*, *:before, *:after{
+			box-sizing: inherit
+		}
+		body {
+			background: #3C7FE3 url("{{page.cover}}") no-repeat center / cover;
+			height: 100vh;
+			color: #fff;
+			text-align: center;
+			font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+			position: relative;
+		}
+		.curtain {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(60,127,227,0.8);
+			border: 1.1rem solid #fff;
+			z-index: -1;
+		}
+		.wrapper {
+			width: 100%;
+		}
+		.full-screen--layout__title {
+			margin: 0;
+			padding: 1rem 2.7rem;
+			font-size: 1.5em;
+			font-weight: lighter;
+			text-align: right;
+			color: white;
+			text-decoration: none;
+			display: inline;
+			position: fixed;
+			top: 1rem;
+			width: 100%;
+			left: 50%;
+			margin-left: -50%;
+		}
+		.full-screen--layout__title:hover {
+			text-decoration: underline;
+			color: #e7e7e7;
+		}
+		.vertic-centered {
+  		width: 100%;
+  		transform: translate(-50%, -50%);
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+		}
+		.full-screen--layout__heading {
+			font-size: 5rem;
+			margin: 0;
+		}
+		.full-screen--layout__social {
+			position: fixed;
+			bottom: 1rem;
+			width: 100%;
+			left: 50%;
+			margin-left: -50%;
+			padding: 0;
+			list-style: none;
+		}
+		.full-screen--layout__social li {
+			display: inline-block;
+		}
+		.full-screen--layout__social a {
+			color: #fff;
+			font-size: 2.5rem;
+			margin: 1.5rem;
+	
+		}
+
+		.full-screen--layout__social i {
+			transition: all 60ms ease-in-out;
+		}
+
+		.full-screen--layout__social i:hover {
+			transform: scale(1.5);
+		}
+
+		.full-screen--layout__social i:active {
+			transform: scale(1.3);
+		}
+
+		@media (min-width: 451px) and (max-width: 700px) {
+			.full-screen--layout__title {
+				font-size: 1.3rem;
+			}
+		  .full-screen--layout__heading {
+		    font-size: 3.3rem;
+		  }
+		}
+
+		@media (min-width: 361px) and (max-width: 450px) {
+			.full-screen--layout__title {
+				font-size: 1.1rem;
+			}
+		  .full-screen--layout__heading {
+		    font-size: 2rem;
+		  }
+		  .full-screen--layout__social a {
+		    font-size: 2rem;
+		    margin: 1rem;
+		  }
+		}
+
+		@media (max-width: 360px) {
+			.full-screen--layout__heading {
+		    font-size: 2rem;
+		  }
+		}
+
+	</style>
+</head>
+
+{{content}}
+</html>
