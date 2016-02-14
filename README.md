@@ -23,9 +23,11 @@ Ogni file deve iniziare con:
 ```
 ---
 layout: post
-title:  "Titolo"
-date:   2015-11-01 12:44:14 +0100
+title: "Titolo"
+date: 2015-11-01 12:44:14 +0100
 cover:
+tags:
+published: true
 ---
 ```
 
