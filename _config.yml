@@ -91,11 +91,13 @@ prose:
           value: CURRENT_DATETIME
       - name: "cover"
         field:
+          help: "Solo il nome dell'immagine (Es. fisioterapia.jpg), oppure link diretto se il file è esterno."
           element: "text"
           label: "cover"
           value: ""
       - name: "tags"
         field:
+          help: "Lista di tag separati da virgola ','"
           element: "text"
           label: "tags"
           value: ""
