@@ -1,5 +1,4 @@
-# antoniopalazzo.net
-
+# Guida
 Gli articoli vanno inseriti nella cartella `_posts` e rinominati in questo modo: `Anno(0000)/Mese(00)/Giorno(00)`
 
 ```
