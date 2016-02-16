@@ -44,10 +44,9 @@ gulp.task('styles', function() {
 // JavaScript
 gulp.task('js', function(){
 
-	return gulp.src(['./assets/js/lib/transition.js', './assets/js/lib/zoom.js', './assets/js/functions.js'])
+	return gulp.src(['./assets/js/lib/transition.js', './assets/js/lib/zoom.js', './assets/js/lib/functions.js'])
 		.pipe(concat('functions.min.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('./_site/assets/js/'))
+		//.pipe(uglify())
 		.pipe(gulp.dest('./assets/js/'));
 
 });

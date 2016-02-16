@@ -11,9 +11,7 @@ author: Dott. Antonio Palazzo
 author_info: Fisioterapista || Osteopata
 email: info@antoniopalazzo.net
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.antoniopalazzo.net" # the base hostname & protocol for your site
 twitter_username: drpalanto
@@ -22,18 +20,26 @@ permalink: /blog/:title/
 # Build settings
 port: 3000
 include: ["_pages"]
-exclude: [node_modules, package.json, npm-debug.log, gulpfile.js, README.md]
+exclude: [node_modules, package.json, npm-debug.log, gulpfile.js, README.md, 'assets/js/lib']
 
 # Site navigation
 site-nav:
   - title: "Servizi"
-    url: /servizi
+    url: "#"
   - title: "Chi Sono"
     url: /chi-sono
   - title: "Blog"
     url: /blog
   - title: "Contatti"
     url: /contatti
+
+servizi-nav:
+  - title: "Fisioterapia"
+    url: /servizi/fisioterapia
+  - title: "Osteopatia"
+    url: /servizi/osteopatia
+  - title: "Disturbi Cranio-Cervico-Mandibolari"
+    url: /servizi/disturbi-cranio-cervico-mandibolari
 
 # Site defaults
 defaults:

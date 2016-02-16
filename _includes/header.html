@@ -4,9 +4,19 @@
   <nav id="site-nav" class="site-nav" role="navigation">
     <div class="l-container">
       <ul class="u-list--no-style">
-        <li class="site-nav__item"><a class="{% if page.url == "/" %}link-is-active{% endif %}" href="/">Home</a></li>
+        <li class="site-nav__item"><a class="site-nav__link {% if page.url == "/" %}link-is-active{% endif %}" href="/">{% if page.url != "/" %}<span class="link-arrow--left">&larr; </span>{% endif %}Home</a></li>
         {% for link in site.site-nav %}
-          <li class="site-nav__item"><a href="{{ link.url }}" class="{% if page.url contains link.url %}link-is-active{% endif %}">{{ link.title }}</a></li>
+          <li class="site-nav__item"><a href="{{ link.url }}" class="site-nav__link {% if page.url contains link.url %}link-is-active{% endif %}">{{ link.title }}{% if link.title == "Servizi" %} &#9662;{% endif %}</a>
+            {% if link.title == "Servizi" %}
+              <ul class="sub-menu">
+                <div class="l-post-container">
+                {% for link in site.servizi-nav %}
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="{{ link.url }}">{{ link.title }}</a>
+                {% endfor %}
+                </div>
+              </ul>
+            {% endif %}
+          </li>
         {% endfor %}
       </ul>
     </div>

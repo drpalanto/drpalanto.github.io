@@ -2,7 +2,7 @@ $nav-blue: #3D4149
 $bar-height: 50px
 
 .site-nav
-	background-color: rgba($nav-blue,.90)
+	background-color: $nav-blue
 	text-align: center
 	position: fixed
 	top: 0
@@ -17,39 +17,70 @@ $bar-height: 50px
 	&__item
 		display: inline
 		font-weight: $font-weight--bold
-		line-height: $bar-height - 3px
-		margin-right: 0
-		&:last-child
-			margin-right: 0
-		a
-			color: rgba($white, .65)
-			display: inline-block
-			padding: 0 .4rem
-			font-weight: $font-weight--bold
+		margin: 0
+	&__link
+		color: rgba($white, .65)
+		display: inline-block
+		font-weight: $font-weight--bold
+		padding: 0 .3rem
+		&:hover
+			text-decoration: none
+			color: $white
+			background-color: lighten($nav-blue, 4%)
+		&.link-is-active
+			color: $font-color--light
+			box-shadow: inset 0 -2px 0 $white
+.sub-menu
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	background-color: lighten($nav-blue, 4%)
+	display: none
+	text-align: left
+	z-index: 4900
+	box-shadow: 0 4px 8px rgba($nav-blue, .6)
+	&__link
+		color: rgba($white, .65)
+		display: inline-block
+		font-weight: $font-weight--bold
+		padding: 0 $spacing--big
+		width: 100%
+		&:hover
+			text-decoration: none
+			background-color: lighten($blue, 10%)
+			color: $white
 
-			&:hover
-				text-decoration: none
-				border-bottom: 2px solid $white
-				color: $white
+.site-nav__item:hover > .sub-menu
+	display: block
 
-			&.link-is-active
-				color: $font-color--light
-				border-bottom: 2px solid $white
+.menu-open
+	color: $white
+	background-color: lighten($nav-blue, 4%)
 
 @media (min-width: rem(350px)) and (max-width: $breakpoint--phone - rem(1px))
-	.site-nav__item a
-		padding: 0 .6rem
+	.site-nav__link
+		padding: 0 .4rem
 
 @media (min-width: $breakpoint--phone) and (max-width: $breakpoint--tablet - rem(1px))
-	.site-nav__item a
-		padding: 0 .9rem
+	.site-nav__link
+		padding: 0 .7rem
 
 @media (min-width: $breakpoint--tablet)
-	.site-nav__item a
+	.site-nav__link
 		padding: 0 1.4rem
 
 @media (min-width: $breakpoint--laptop)
-	.site-nav__item a
+	.site-nav__link
 		padding: 0 2rem
 	.site-nav
 		position: absolute
+	.site-nav__item
+		position: relative
+	.sub-menu
+		position: absolute
+		top: 34px
+		left: 0
+		width: 320px
+		&__link
+			padding: 0 $spacing--normal
