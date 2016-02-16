@@ -6,7 +6,16 @@ cover: null
 published: true
 ---
 
+
 <img src="https://avatars.io/twitter/drpalanto" alt="Foto" class="float-left" />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Laureato in Fisioterapia presso l’Università degli Studi "G. D'Annunzio" di Chieti (2005) e specializzato in Osteopatia e Terapia Manuale presso l'A.T. Still Academy di Bari (2009), si occupa della valutazione e del trattamento delle disfunzioni dell’apparato locomotore. Svolge la sua pratica clinica presso il proprio studio sito in Mottola (TA).
+
+
+Collabora con numerosi specialisti di fama, occupandosi anche di riabilitazione pre e post chirurgica.
+
+
+La sua attività clinica, rivolta in generale a tutte le disfunzioni dell’apparato locomotore, si concentra essenzialmente sui dolori e le disfunzioni della colonna vertebrale (Lombalgia, Lombosciatalgia, Cervicalgia, Cervicobrachialgia, Dolori toracici, Dolori costali) i disturbi cranio-cervico-mandibolari (Mal di testa, Cefalee, Emicranie, Disturbi della masticazione) e la riabilitazione sportiva.
+
+
+All’attività clinica si accompagna una intensa attività di aggiornamento professionale.
