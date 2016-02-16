@@ -75,6 +75,8 @@ prose:
     - tile-wide.png
     - tile.png
     - apple-touch-icon.png
+    - sitemap.xml
+    - google7c0e95f29705c4c3.html
   metadata:
     _posts:
       - name: "published"
