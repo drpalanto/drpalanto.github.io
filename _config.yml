@@ -60,6 +60,7 @@ prose:
     - /_includes
     - /_sass
     - /assets
+    - /_pages/blog
     - .gitignore
     - 404.html
     - CNAME
