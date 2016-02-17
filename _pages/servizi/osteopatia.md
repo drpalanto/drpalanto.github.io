@@ -3,6 +3,7 @@ layout: page
 title: "Osteopatia"
 permalink: /servizi/osteopatia/
 cover: osteopatia.jpg
+description: "L'osteopatia è una medicina olistica non convenzionale che utilizza le sole mani come strumento di diagnosi e cura."
 ---
 
 ## COS'È L'OSTEOPATIA

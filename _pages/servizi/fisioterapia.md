@@ -3,6 +3,7 @@ layout: page
 title: "Fisioterapia"
 permalink: /servizi/fisioterapia/
 cover: fisioterapia.jpg
+description: "La fisioterapia è una branca della medicina che si occupa della prevenzione, cura e riabilitazione dei pazienti affetti da patologie o disfunzioni congenite o acquisite in ambito muscoloscheletrico, neurologico e viscerale attraverso molteplici interventi terapeutici, quali: terapia fisica, terapia manuale/manipolativa, massoterapia, terapia posturale, chinesiterapia e altre."
 ---
 
 La fisioterapia (dal greco Φυσιο = naturale e θεραπεία = terapia) è una branca della medicina che si occupa della prevenzione, cura e riabilitazione dei pazienti affetti da patologie o disfunzioni congenite o acquisite in ambito muscoloscheletrico, neurologico e viscerale attraverso molteplici interventi terapeutici, quali: terapia fisica, terapia manuale/manipolativa, massoterapia, terapia posturale, chinesiterapia e altre. La fisioterapia è praticata dal professionista laureato in fisioterapia (Dottore in Fisioterapia), appartenente alla classe delle professioni sanitarie della riabilitazione.

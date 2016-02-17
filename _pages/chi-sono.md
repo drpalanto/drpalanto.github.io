@@ -3,7 +3,7 @@ layout: page
 title: Chi sono
 permalink: "/chi-sono/"
 cover: null
-published: true
+description: "Dott. Antonio Palazzo, laureato in Fisioterapia e specializzato in Osteopatia e terapia manuale, si occupa della valutazione e del trattamento delle disfunzioni dell’apparato locomotore."
 ---
 
 

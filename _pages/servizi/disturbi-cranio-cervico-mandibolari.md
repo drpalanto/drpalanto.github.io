@@ -3,6 +3,7 @@ layout: page
 title: "Disturbi Cranio-Cervico-Mandibolari"
 permalink: /servizi/disturbi-cranio-cervico-mandibolari/
 cover: disturbi-cranio.jpg
+description: "La terapia dei disturbi cranio-cervico-mandibolari dopo una accurata e approfondita analisi permette di curare i disturbi provocati da problemi muscolari, nervosi e articolari dell'articolazione temporo-mandibolari, che molto spesso provocano con grande sorpresa del paziente una sintomatologia satellite non localizzata: cefalea, dolori alla schiena, all'orecchio, acufeni, vertigini."
 ---
 
 La terapia dei disturbi cranio-cervico-mandibolari dopo una accurata e approfondita analisi permette di curare i disturbi provocati da problemi muscolari, nervosi e articolari dell'articolazione temporo-mandibolari, che molto spesso provocano con grande sorpresa del paziente una sintomatologia satellite non localizzata: cefalea, dolori alla schiena, all'orecchio, acufeni, vertigini.

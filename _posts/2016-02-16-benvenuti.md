@@ -3,6 +3,7 @@ layout: post
 title: "Benvenuti"
 date: 2015-11-01 12:44:14 +0100
 cover:
+description: ""
 tags:
 published: false
 ---

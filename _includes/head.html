@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 {% comment %} Twitter Cards {% endcomment %}
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@site_username">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
   <meta name="twitter:creator" content="@{{ site.twitter_username }}">
   {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }}">
@@ -20,6 +20,8 @@
   {% endif %}
   {% if page.description %}
     <meta name="twitter:description" content="{{ page.description }}">
+  {% elsif page.excerpt %}
+    <meta name="twitter:description" content="{{ page.excerpt }}">
   {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
@@ -29,21 +31,44 @@
     <meta name="twitter:image:src" content="{{ site.url }}/tile-wide.png">
   {% endif %}
 {% comment %} Open Graph {% endcomment %}
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:type" content="{% if page.cover %}article{% else %}website{% endif %}">
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:image" content="{% if page.cover %}{{ page.cover | prepend: site.baseurl | prepend: site.url }}{% else %}{{ {{baseurl}}/avatar | prepend: site.baseurl | prepend: site.url }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:locale" content="{{ site.locale }}">
-  {% if page.date %}
-    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-    <meta property="article:author" content="{{ site.fb_admins }}">
-    {% for post in site.related_posts limit:3 %}
-      <meta property="og:see_also" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    {% endfor %}
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+  <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+  <meta content="{{ site.title }}" property="og:title">
   {% endif %}
-  <meta property="fb:admins" content="{{ site.fb_admins }}">
+  {% if page.title %}
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.description %}
+  <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+  <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+  {% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  <meta content="{{ site.url }}/about/" property="article:author">
+  {% endif %}
+  {% if page.cover %}
+  <meta content="{{ site.url }}/immagini/{{ page.cover }}" property="og:image">
+  {% else %}
+  <meta content="{{ site.url }}/tile-wide.png" property="og:image">
+  {% endif %}
+  {% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
+  {% endif %}
+  {% if page.tags %}
+  {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}
+  {% endif %}
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="msapplication-TileColor" content="#454545">
