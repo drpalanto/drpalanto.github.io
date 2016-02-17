@@ -11,13 +11,13 @@ author: Dott. Antonio Palazzo
 author_info: Fisioterapista || Osteopata
 email: info@antoniopalazzo.net
 description: > # this means to ignore newlines until "baseurl:"
-Dott. Antonio Palazzo, laureato in Fisioterapia e specializzato in Osteopatia e terapia manuale, si occupa della valutazione e del trattamento delle disfunzioni dell’apparato locomotore.
+  Dott. Antonio Palazzo, laureato in Fisioterapia e specializzato in Osteopatia e terapia manuale, si occupa della valutazione e del trattamento delle disfunzioni dell’apparato locomotore.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.antoniopalazzo.net" # the base hostname & protocol for your site
 twitter_username: drpalanto
 permalink: /blog/:title/
-fb_admins:          https://www.facebook.com/osteopatiamottola
-avatar:             https://avatars.io/twitter/drpalanto
+fb_admins: https://www.facebook.com/osteopatiamottola
+avatar: https://avatars.io/twitter/drpalanto
 
 # Build settings
 port: 3000
