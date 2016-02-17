@@ -170,19 +170,15 @@ input, textarea
   border-radius: $border-radius--normal
   margin-bottom: $spacing--small
   padding: .6rem
-  border: none
+  border: 1px solid $dark-blue
   width: 100%
-  background-color: tint($dark-blue, 70%)
+  background-color: darken($white, 6%)
   color: $dark-blue
   +placeholder
     color: tint($dark-blue, 30%)
 
 input
   width: 76%
-
-input:focus,
-textarea:focus
-  background-color: $white
 
 // Inverted colors
 .invert-colors
