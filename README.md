@@ -1,5 +1,5 @@
 # Guida
-Gli articoli vanno inseriti nella cartella `_posts` e rinominati in questo modo: `Anno(0000)/Mese(00)/Giorno(00)`
+Gli articoli vanno inseriti nella cartella `_posts` e rinominati in questo modo: `Anno(0000)-Mese(00)-Giorno(00)-titolo-dell-articolo.md`
 
 ```
 _posts
@@ -22,13 +22,11 @@ Ogni file deve iniziare con:
 
 ```
 ---
-layout: post
-title: "Titolo"
+title: Titolo
 date: 2015-11-01 12:44:14 +0100
 cover:
-description: ""
+description:
 tags:
-published: true
 ---
 ```
 

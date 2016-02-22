@@ -1,8 +1,8 @@
 ---
 title: "Evoluzione, salute e malattia dell'uomo"
 date: 2016-02-22 10:46 +0100
-description: "La storia del corpo umano è un libro che che fa riflettere su chi siamo e come ci stiamo evolvendo"
-cover:
+cover: storia-corpo.jpg
+description:
 tags:
 ---
 
