@@ -44,9 +44,10 @@ gulp.task('styles', function() {
 // JavaScript
 gulp.task('js', function(){
 
-	return gulp.src(['./assets/js/lib/transition.js', './assets/js/lib/zoom.js', './assets/js/lib/functions.js'])
-		.pipe(concat('functions.min.js'))
-		//.pipe(uglify())
+	return gulp.src('./assets/js/lib/functions.js')
+		//.pipe(concat('functions.min.js'))
+		.pipe(uglify())
+		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('./assets/js/'));
 
 });
