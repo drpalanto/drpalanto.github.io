@@ -51,6 +51,7 @@ defaults:
       type: posts
     values:
       is_post: true
+      layout: post
 
 prose:
   media: 'immagini'

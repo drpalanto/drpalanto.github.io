@@ -44,11 +44,6 @@ button,
   -webkit-font-smoothing: antialiased
   font-smoothing: antialiased
 
-article :not(h1)
-  -moz-osx-font-smoothing: auto
-  -webkit-font-smoothing: subpixel-antialiased
-  font-smoothing: subpixel-antialiased
-
 body
   color: $font-color--normal
   font-family: $font-family--normal
@@ -94,6 +89,13 @@ hr
 
 small
   font-size: $font-size--tiny
+
+blockquote
+  border-left: 3px solid $grey10
+  margin-left: $spacing--normal
+  margin-right: $spacing--normal
+  padding: 0 $spacing--normal
+  color: lighten($grey60, 14%)
 
 // Links
 a

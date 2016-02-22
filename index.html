@@ -31,15 +31,15 @@ cover: home.jpg
     </section>
 
 
-    <section id="recent-posts" class="recent-posts">
+    <section id="recent-posts">
     <h2 class="section-heading"><span class="hide-separator">Articoli Recenti</span></h2>
 
-      <ul class="recent-posts__list l-grid">
+      <ul class="recent-posts l-grid">
           {% for post in site.posts %}
 
               <div class="l-grid__col l-grid__col--1-of-2">
               <a class="recent-posts__link " href="{{ post.url | prepend: site.baseurl }}">
-                <li class="recent-posts__entry">
+                <li class="recent-posts__item">
                   <span class="recent-posts__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                   <h2>

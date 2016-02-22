@@ -25,5 +25,17 @@
 .recent-posts
 	margin-bottom: $spacing--big
 
-.recent-posts__list
-	padding-bottom: $spacing--big
+	&__link
+		border-radius: $border-radius--normal
+		padding: $spacing--tiny
+		display: block
+		margin-bottom: $spacing--small
+		font-weight: $font-weight--normal
+
+	&__link:hover
+		text-decoration: none
+		background-color: $grey10
+
+	&__meta
+		font-size: $font-size--tiny
+		color: darken($grey10, 16%)

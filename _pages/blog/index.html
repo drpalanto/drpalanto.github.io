@@ -17,7 +17,7 @@ cover:
                   <h2>
                     {{ post.title }}
                   </h2>
-                  <p>Chances are, at some point, you’ll want to include images, downloads, or other digital assets along with your text content. While the syntax for linking to these resources differs between Markdown and Textile, the problem of working out where to store these files in your site is something everyone will face.</p>
+                  <p> {{ post.content | strip_html | strip_newlines | truncate: 200 }} </p>
                 </li>
               </a>
           {% endfor %}
